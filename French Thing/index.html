@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+	<script src="jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,600' rel='stylesheet'>
+	<link rel="icon" href="icon.png">
+    <meta charset="utf-8">
+    <title>Le Blog D'Adam</title>
+  </head>
+  <body>
+	<script>
+		$(function() {
+			$("button").on("click", function() {
+			window.location.reload();
+			});
+		});
+		$(window).on('beforeunload', function(){
+			$(window).scrollTop(0);
+		});
+		function appearOne() {
+			console.log("one clicked")
+			document.getElementById("onclick1").style["animationPlayState"] = "running";
+			document.getElementById("onclick1txt").style["animationPlayState"] = "running";
+		}
+		function boxOne100() {
+			console.log("box one clicked")
+			document.getElementById("hiddenbox1").style["animationPlayState"] = "running";
+		}
+		function appearTwo() {
+			console.log("two clicked")
+			document.getElementById("onclick2").style["animationPlayState"] = "running";
+			document.getElementById("onclick2txt").style["animationPlayState"] = "running";
+		}
+		function boxTwo100() {
+			console.log("box two clicked")
+			document.getElementById("hiddenbox2").style.animationPlayState = "running";
+		}
+		function appearThree() {
+			console.log("three clicked")
+			document.getElementById("onclick3").style.animationPlayState = "running";
+			document.getElementById("onclick3txt").style.animationPlayState = "running";
+		}
+		function boxThree100() {
+			console.log("box three clicked")
+			document.getElementById("hiddenbox3").style.animationPlayState = "running";
+		}
+		function appearFour() {
+			console.log("four clicked")
+			document.getElementById("onclick4").style.animationPlayState = "running";
+			document.getElementById("onclick4txt").style.animationPlayState = "running";
+		}
+		function boxFour100() {
+			console.log("box four clicked")
+			document.getElementById("hiddenbox4").style.animationPlayState = "running";
+		}		
+		function appearFive() {
+			console.log("five clicked")
+			document.getElementById("onclick5").style["animationPlayState"] = "running";
+		}
+		function boxFive100() {
+			console.log("box five clicked")
+			document.getElementById("hiddenbox5").style["animationPlayState"] = "running";
+		}
+	</script>
+
+    <div class="box5 grow" onclick="appearFive(); boxFive100();">
+		<div class="subtitle5"><h2>Des Extras</h2></div>
+		</div>
+	<div class="box4 grow" onclick="appearFour(); boxFour100();">
+		<div class="subtitle4"><h2>Ma Personalitée</h2></div>
+		</div>
+	<div class="box1 grow" onclick="appearOne(); boxOne100();">
+		<div class="subtitle1"><h2>À Propos de Moi</h2></div>
+		</div>
+	<div class="box2 grow" onclick="appearTwo(); boxTwo100();">
+		<div class="subtitle2"><h2>Ma Journée Typique</h2></div>
+		</div>
+	<div class="box3 grow" onclick="appearThree(); boxThree100();">
+		<div class="subtitle3"><h2>Mes Passes-Temps</h2></div>
+		</div>
+	<div class="title"><h1>Le Blog d'Adam</h1></div>
+
+	<div class="hiddenbox1" id="hiddenbox1"></div>
+	<div class="onclick1" id="onclick1"><h3>À Propos de Moi</h3></div>
+	<div class="onclick1txt" id="onclick1txt"><p><b>Mon nom</b></br>&nbsp&nbsp&nbspJe m'appelle Adam</br></br>
+												<b>Mon Âge</b></br>&nbsp&nbsp&nbspJ'ai 14 ans</br></br>
+												<b>Ma Taille</b></br>&nbsp&nbsp&nbsp1 mètres est 75 centimetres</br></br>
+												<b>Date d'Anniversaire</b></br>&nbsp&nbsp&nbspMon anniversaire est le 5 mai 2004</br></br>
+												<b>Lieu de Naissance</b></br>&nbsp&nbsp&nbspJe suis né à Scarborough</br></br>
+												<b>Couleur des Yeux</b></br>&nbsp&nbsp&nbspMes yeux sont bruns</br></br>
+												<b>Couleur des cheveux</b></br>&nbsp&nbsp&nbspMes cheveux sont noirs</br></br>
+												<b>Description physique</b></br>&nbsp&nbsp&nbspJe ne sais pas... peut-être gros??</p></div>
+												
+	<div class="hiddenbox2" id="hiddenbox2"></div>
+	<div class="onclick2" id="onclick2"><h3>Ma Journée Typique</h3></div>
+	<div class="onclick2txt" id="onclick2txt"><p><b>7h00</b></br>&nbsp&nbsp&nbspJe me reveille</br></br>
+												<b>7h20</b></br>&nbsp&nbsp&nbspJe me leve</br></br>
+												<b>7h25</b></br>&nbsp&nbsp&nbspJe me brosse les dents</br></br>
+												<b>7h30</b></br>&nbsp&nbsp&nbspJe m'habille</br></br>
+												<b>7h45</b></br>&nbsp&nbsp&nbspJe mange le petit dejeuner</br></br>
+												<b>7h50</b></br>&nbsp&nbsp&nbspJe vais a l'ecole</br></br>
+												<b>8h15</b></br>&nbsp&nbsp&nbspJ'etudie a l'ecole</br></br>
+												<b>10h55</b></br>&nbsp&nbsp&nbspJe mange le dejeuner dans la cafe</br></br>
+												<b>14h55</b></br>&nbsp&nbsp&nbspJe fini l'ecole et je retourner chez moi.</br></br>
+												<b>15h00</b></br>&nbsp&nbsp&nbspJe mange un collation</br></br>
+												<b>15h30</b></br>&nbsp&nbsp&nbspJe fais mes devoirs</br></br>
+												<b>16h30</b></br>&nbsp&nbsp&nbspJe practique la piano pour 30 minutes</br></br>
+												<b>17h50</b></br>&nbsp&nbsp&nbspJE REGARDE EXTRA FRENCH</br></br>
+												<b>18h30</b></br>&nbsp&nbsp&nbspJe mange le diner</br></br>
+												<b>19h30</b></br>&nbsp&nbsp&nbspJe joue sur l'ordinateur</br></br>
+												<b>20h45</b></br>&nbsp&nbsp&nbspJe me douche</br></br>
+												<b>20h55</b></br>&nbsp&nbsp&nbspJe me brosse les dents</br></br>
+												<b>21h00</b></br>&nbsp&nbsp&nbspJe dors.</p></div>
+												
+	<div class="hiddenbox3" id="hiddenbox3"></div>
+	<div class="onclick3" id="onclick3"><h3>Mes passe-temps</h3></div>
+	<div class="onclick3txt" id="onclick3txt"><div><p></br>&nbsp&nbsp&nbsp&nbsp&nbspPendant mes passe-temps, je regarde YouTube, jouer Smash, ou je lit. 
+	J'aime aussi joue dehors. Mon sport prefere est le basket. Je joue le basket quand le meteo est parfait pour jouer dehors, mais quand la meteo
+	n'est pas beau, je joue les jeux videos.</p></div></div>
+	
+	<div class="hiddenbox4" id="hiddenbox4"></div>
+	<div class="onclick4" id="onclick4"><h3>Ma Personalitée</h3></div>
+	<div class="onclick4txt" id="onclick4txt"><p></br><b>Des qualités</b></br>&nbsp&nbsp&nbsp&nbsp&nbsp <b>·Je suis drole</b></br>
+														&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspParce que j'aime toujours raconter les blagues
+														</br></br>&nbsp&nbsp&nbsp&nbsp&nbsp <b>·Je suis social</b></br>
+														&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspParce que j'ai beaucoup des amis et j'aime beaucoup parler avec mes amis
+														</br></br>&nbsp&nbsp&nbsp&nbsp&nbsp <b>·Je suis stupid(dans un bon sens)</b></br>
+														&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspParce que parfois, je me comporte tres stupid parce que je pense que c'est amusant</br></br>
+													</br><b>Des defauts</b></br>&nbsp&nbsp&nbsp&nbsp&nbsp <b>·Je suis très distrayant</b></br>
+														&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspParce que depuis que je tiens à parler beaucoup, c'est ennuyeux.</p></div>
+	
+	<div class="hiddenbox5" id="hiddenbox5"></div>
+	<div class="onclick5" id="onclick5"><h3>Des Extras (jusqu'ici, rien n'est ici)</h3></div>
+	
+	<button>Rafraîchir</button>
+	<p></p>
+  </body>
+</html>
